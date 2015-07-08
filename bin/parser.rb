@@ -19,6 +19,9 @@ def Parse(cmd)
 	if cmd[0, 3] == "p: "
 		puts cmd[3, cmd.length]
 	end
+	if cmd[0, 4] == "rev: "
+		puts cmd[4, cmd.length].reverse
+	end
 	if cmd == "cls" ||  cmd == "clear" || cmd == "cc"
 		system 'clear'
 	end
